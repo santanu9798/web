@@ -1,0 +1,650 @@
+/* ============================================
+   DR. JAY MANGAL SINGH PRATHMIC PRASHIKSHAN SANSTHAN
+   Theme: Clean White + Deep Navy + Gold
+   ============================================ */
+
+/* --- RESET & BASE --- */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navy:       #1A2E4A;
+    --navy-dark:  #111E30;
+    --navy-mid:   #243D5F;
+    --gold:       #C9981A;
+    --gold-light: #F0C84A;
+    --white:      #FFFFFF;
+    --off-white:  #F7F9FC;
+    --light-gray: #EEF1F6;
+    --mid-gray:   #C0C8D6;
+    --text-main:  #1A2235;
+    --text-muted: #5A6478;
+    --border:     #DDE3ED;
+    --shadow-sm:  0 2px 8px rgba(26,46,74,0.08);
+    --shadow-md:  0 6px 24px rgba(26,46,74,0.12);
+    --shadow-lg:  0 12px 40px rgba(26,46,74,0.16);
+    --radius-sm:  4px;
+    --radius-md:  8px;
+    --radius-lg:  14px;
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans:  'Inter', system-ui, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-sans);
+    background: var(--white);
+    color: var(--text-main);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ============================================
+   TOP BAR
+   ============================================ */
+.topbar {
+    background: var(--navy-dark);
+    color: #A8BBCF;
+    font-size: 0.78rem;
+    font-family: var(--font-sans);
+    padding: 7px 0;
+    border-bottom: 2px solid var(--gold);
+}
+
+.topbar-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.topbar-left .divider {
+    color: #3A5070;
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.social-top {
+    color: #A8BBCF;
+    font-size: 0.75rem;
+    letter-spacing: 0.03em;
+    transition: color 0.2s;
+}
+
+.social-top:hover {
+    color: var(--gold-light);
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+.site-header {
+    background: var(--navy);
+    padding: 20px 0;
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo-emblem {
+    font-size: 2.8rem;
+    background: var(--gold);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 4px rgba(201,152,26,0.25);
+}
+
+.header-text h1 {
+    font-family: var(--font-serif);
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+}
+
+.header-sub {
+    color: #93AABF;
+    font-size: 0.8rem;
+    margin-top: 4px;
+    font-weight: 400;
+}
+
+.header-contact {
+    text-align: right;
+    align-items: right;
+}
+
+.contact-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2px;
+    font-size: 0.82rem;
+    color: #A8BBCF;
+}
+
+.contact-label {
+    font-weight: 600;
+    color: var(--gold-light);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 2px;
+}
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+.main-nav {
+    background: var(--white);
+    border-bottom: 3px solid var(--gold);
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+/* Dropdown Button */
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 15px 18px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--text-main);
+    letter-spacing: 0.03em;
+    transition: color 0.2s;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: white;}
+
+.nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    flex-wrap: wrap;
+}
+
+
+.nav-link {
+    display: block;
+    padding: 15px 18px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--text-main);
+    letter-spacing: 0.03em;
+    position: relative;
+    transition: color 0.2s;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 18px;
+    right: 18px;
+    height: 3px;
+    background: var(--gold);
+    transform: scaleX(0);
+    transition: transform 0.25s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--navy);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    transform: scaleX(1);
+}
+
+.nav-cta {
+    margin-left: auto;
+    background: var(--navy);
+    color: var(--white) !important;
+    border-radius: var(--radius-sm);
+    padding: 10px 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.nav-cta::after {
+    display: none;
+}
+
+.nav-cta:hover {
+    background: var(--navy-mid) !important;
+    color: var(--white) !important;
+}
+
+.width-100 {
+    width: 100%;
+    float: left;
+}
+
+.container {
+  width: 1500px;
+  margin: 0px auto;
+}
+  
+.top-header{
+  background: #2196f3;
+  padding: 5px 0px;
+  border-bottom: 1px solid #10314d;
+}
+/* ============================================
+   MAIN CONTENT LAYOUT
+   ============================================ */
+.main-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 24px;
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 40px;
+    align-items: start;
+}
+
+/* ============================================
+   SECTION STYLES (shared)
+   ============================================ */
+.section-eyebrow {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.25;
+    margin-bottom: 14px;
+}
+
+.section-rule {
+    width: 50px;
+    height: 3px;
+    background: var(--gold);
+    border-radius: 2px;
+    margin-bottom: 24px;
+}
+
+.section-body {
+    color: var(--text-muted);
+    font-size: 0.96rem;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+
+/* Contact Card */
+.contact-info-list {
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.info-row {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.info-ico {
+    font-size: 1rem;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.info-row strong {
+    display: block;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--navy);
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.info-row p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.social-btns {
+    display: flex;
+    border-top: 1px solid var(--border);
+}
+
+.social-btn-fb,
+.social-btn-yt,
+.social-btn-tw {
+    flex: 1;
+    text-align: center;
+    padding: 10px 6px;
+    font-size: 0.76rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    transition: background 0.2s;
+    border-right: 1px solid var(--border);
+}
+
+.social-btn-fb:last-child,
+.social-btn-yt:last-child,
+.social-btn-tw:last-child {
+    border-right: none;
+}
+
+.social-btn-fb { color: #1877F2; }
+.social-btn-fb:hover { background: #EBF3FE; }
+
+.social-btn-yt { color: #FF0000; }
+.social-btn-yt:hover { background: #FFF0F0; }
+
+.social-btn-tw { color: #1DA1F2; }
+.social-btn-tw:hover { background: #E8F5FD; }
+
+/* ============================================
+  About Page
+   ============================================ */
+
+.about-section{
+    width:100%;
+    padding:80px 10%;
+    background:#f8f9fc;
+}
+
+.about-container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.about-title{
+    text-align:center;
+    font-size:20px;
+    color:#0d2c54;
+    margin-bottom:15px;
+}
+
+.title-line{
+    width:120px;
+    height:4px;
+    background:#ff9800;
+    margin:0 auto 40px;
+    border-radius:10px;
+}
+
+.about-text{
+    font-size:18px;
+    line-height:1.9;
+    color:#555;
+    margin-bottom:20px;
+    text-align:justify;
+}
+
+.vision-mission{
+    display:flex;
+    gap:30px;
+    margin-top:50px;
+    flex-wrap:wrap;
+}
+
+.card{
+    flex:1;
+    min-width:300px;
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h2{
+    color:#0d2c54;
+    margin-bottom:15px;
+}
+
+.card p,
+.card ul{
+    color:#555;
+    line-height:1.8;
+}
+
+.card ul{
+    padding-left:20px;
+}
+
+.tagline{
+    margin-top:40px;
+    text-align:center;
+    background:#0d2c54;
+    color:#fff;
+    padding:15px;
+    font-size:20px;
+    border-radius:50px;
+    font-weight:bold;
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+
+    .about-title{
+        font-size:30px;
+    }
+
+    .about-text{
+        font-size:16px;
+    }
+
+    .vision-mission{
+        flex-direction:column;
+    }
+}
+
+/* FOOTER */
+.site-footer {
+    background: linear-gradient(135deg, #0d1117, #14213d);
+    color: #ffffff;
+    padding: 50px 0;
+}
+
+.footer-inner {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-col h4 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.footer-col h4::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background: #ff9800;
+    margin-top: 10px;
+}
+
+.footer-col p {
+    color: #d6d6d6;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.footer-badge {
+    color: #9bb0d3;
+    font-size: 14px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 12px 0;
+}
+
+.footer-links a {
+    color: #d6d6d6;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ff9800;
+    padding-left: 6px;
+}
+
+.footer-contact-item {
+    font-size: 16px;
+    color: #d6d6d6;
+}
+
+/* COPYRIGHT */
+.footer-bottom {
+    background: #0a0f1c;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-bottom-inner {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 18px 0;
+    color: #cfcfcf;
+    font-size: 14px;
+}
+
+.heart {
+    color: red;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    .footer-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-col h4::after {
+        margin: 10px auto 0;
+    }
+}
