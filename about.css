@@ -169,7 +169,7 @@ img {
 .header-contact {
     display: flex;
     text-align: right;
-    align-items: right;
+    align-items: center;
 }
 
 .contact-badge {

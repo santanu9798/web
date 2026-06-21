@@ -164,7 +164,7 @@ img {
 .header-contact {
     display: flex;
     text-align: right;
-    align-items: right;
+    align-items: center;
 }
 
 .contact-badge {
@@ -184,6 +184,7 @@ img {
     text-transform: uppercase;
     margin-bottom: 2px;
 }
+
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 992px) {
@@ -370,13 +371,16 @@ img {
 }
 
 .container {
-  width: 1500px;
-  margin: 0px auto;
-}
-.top-header{
-  background: #2196f3;
-  padding: 5px 0px;
-  border-bottom: 1px solid #10314d;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+.top-header {
+    background: #2196f3;
+    padding: 5px 0px;
+    border-bottom: 1px solid #10314d;
 }
 
         /* Container Layout */

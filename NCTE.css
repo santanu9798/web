@@ -164,7 +164,7 @@ img {
 .header-contact {
     display: flex;
     text-align: right;
-    align-items: right;
+    align-items: center;
 }
 
 .contact-badge {
@@ -369,11 +369,13 @@ img {
 }
 
 .container {
-    width: 1500px;
-    margin: 0px auto;
-}
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
 
-.top-header{
+.top-header {
     background: #2196f3;
     padding: 5px 0px;
     border-bottom: 1px solid #10314d;

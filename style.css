@@ -169,7 +169,7 @@ img {
 .header-contact {
     display: flex;
     text-align: right;
-    align-items: right;
+    align-items: center;
 }
 
 .contact-badge {
@@ -257,17 +257,42 @@ img {
     top: 0;
     z-index: 100;
 }
-/* Dropdown Button */
-.dropbtn {
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+.main-nav .nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.main-nav .nav-link {
+    color: var(--navy-dark);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 18px;
+    transition: background 0.2s, color 0.2s;
+}
+.main-nav .nav-link:hover,
+.main-nav .nav-link.active {
+    background: var(--gold);
+    color: var(--white);
+    border-radius: 8px;
+}
+@media (max-width: 768px) {
+    .main-nav .nav-inner {
+        justify-content: center;
+    }
+    .main-nav .nav-link {
+        flex: 1 1 100%;
+        padding: 12px 16px;
+        text-align: center;
+    }
 }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
+.dropbtn {
     padding: 15px 18px;
     font-size: 0.88rem;
     font-weight: 500;
@@ -309,6 +334,7 @@ img {
     padding: 0 24px;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0;
     flex-wrap: wrap;
 }
@@ -374,8 +400,10 @@ img {
 }
 
 .container {
-  width: 1500px;
-  margin: 0px auto;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 .top-header{
   background: #2196f3;
@@ -390,7 +418,7 @@ img {
     width: 100%;
     min-height: 520px;
     display: flex;
-    align-items: left;
+    align-items: flex-start;
     overflow: hidden;
     background: var(--navy-dark);
 }
